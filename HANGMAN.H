@@ -10,7 +10,7 @@
 #include <string.h>
 #include <graphics.h>
 #include <stdio.h>
-
+//IMPORTANT : This file must be in the bin section of turboC++
 //Functions and class declarations and definitions
 
 char name[20];
