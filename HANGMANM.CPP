@@ -8,7 +8,7 @@
 #include <dos.h>
 #include <stdio.h>
 #include <ctype.h>
-
+//IMPORTANT : This file must be stored in the BGI folder of TurboC++
 class Game {   // class containing virtual function & destructor
 	public:
 	virtual void play_game() = 0;
@@ -37,7 +37,7 @@ class Words : public Game,public GameSounds
 		"DOG","CAT","PANDA","BEAR","TIGER","HORSE","HYENA",
 		"BURGER","PIZZA","BURRITO","FRANKIE","FRIEDRICE","NOODLES","BIRYANI",
 		"APPLE","MANGO","GUAVA","WATERMELON","KIWI","ORANGE","BANANA",
-		"PINK","BLACK","GREEN","YELLOW","BLUE","WHITE","MAGENTA","CYAN",
+		"PINK","BLACK","GREEN","YELLOW","BLUE","WHITE","MAGENTA",
 		"SHINCHAN","DORAEMON","POKEMON","BAYBLADE","BENTEN","SCOOBYDOO","MINIONS",
 		"IRONMAN","SUPERMAN","BATMAN","SPIDERMAN","BLACKWIDOW","THOR","VISION",
 		"MUMBAI","CHENNAI","KOLKATA","LUCKNOW","DARJEELING","BANGLORE","HYDERABAD"
@@ -108,9 +108,9 @@ void Words :: play_game()
 		   outtextxy(20,90,"The word is related to Food");
 		 }
 	      else if(strcmp(word,"BLACK")== 0 || strcmp(word,"WHITE")== 0 ||
-		      strcmp(word,"CYAN")== 0 ||
+		      strcmp(word,"PINK")== 0 || strcmp(word,"CYAN")== 0 ||
 		      strcmp(word,"GREEN")== 0 || strcmp(word,"BLUE")== 0 ||
-		      strcmp(word,"MAGENTA")== 0 || strcmp(word,"YELLOW") == 0)
+		      strcmp(word,"MAGENTA")== 0)
 		 {
 		   outtextxy(20,90,"The word is related to Colors");
 		 }
